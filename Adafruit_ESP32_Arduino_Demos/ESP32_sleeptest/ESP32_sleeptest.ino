@@ -70,7 +70,7 @@ void enableInternalPower() {
 #endif
 
 #if defined(ARDUINO_ADAFRUIT_FEATHER_ESP32S2)
-  // turn on the I2C power by setting pin to opposite of 'rest state'
+  // turn off the I2C power by setting pin to opposite of 'rest state'
   pinMode(PIN_I2C_POWER, INPUT);
   delay(1);
   bool polarity = digitalRead(PIN_I2C_POWER);
